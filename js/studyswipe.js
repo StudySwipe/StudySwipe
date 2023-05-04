@@ -265,7 +265,7 @@ let update_hash = function(input){
 let nav = {
     entries : [],
     active : null,
-    /// Reads active page from hash value (e.g. index.html#/first-page)
+    /// Reads active page from hash value (e.g. example.html#/first-page)
     set_active : function(){
         let hash_res = load_hash();
         if(hash_res.section){

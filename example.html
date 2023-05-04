@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einstieg Blut</title>
+    <link rel="stylesheet" href="css/studyswipe.css">
+</head>
+
+<body>
+    <div class="weblearn">
+        <div class="navigation">
+            <div>
+                <button class="expndnav"><svg height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></button>
+                <progress id="progressbar" max="100" value="0"></progress>
+            </div>
+            <div id="navul" style="display:none">
+            </div>
+        </div>
+
+        <div class="pages">
+            <section id="start">
+                <h1>Herzlich Willkommen</h1>
+                <p>Herzlich Willkommen zur WebLearn Demo zum Thema Blut. Feedback bitte direkt an Keanu, ggf. per E-mail via keanu@doelle.cc</p>
+                <h2>Niveau auswählen</h2>
+                <div class="level-select">
+                    <div>
+                        <input type="radio" data-level="1" id="level-1" name="level">
+                        <label for="level-1">Nur das wichtigste</label>
+                    </div>
+                    <div>
+                        <input type="radio" data-level="2" id="level-2" name="level">
+                        <label for="level-2">Detaillierter</label>
+                    </div>
+                    <div>
+                        <input type="radio" data-level="3" id="level-3" name="level" checked>
+                        <label for="level-3">Alles</label>
+                    </div>
+                </div>
+                <p class="level-limited" data-level="2">
+                    Das ist erst bei "Detaillierter" sichtbar
+                </p>
+                <p class="level-limited" data-level="3">
+                    Das ist erst ab "Alles" sichtbar
+                </p>
+                <h2>Wie funktioniert das hier?</h2>
+                <p>Durch das <span class="tooltip">Wischen<span class="tooltiptext">Was Wischen bedeutet solltest du aber wissen.</span></span> nach links (oder drücken der rechten Pfeiltaste) könnt ihr auf die nächste Seite springen. Durch das Wischen nach rechts (oder drücken der linken Pfeiltaste) könnt ihr auf die vorherige Seite zurückspringen.</p>
+                <figure class="imagebox">
+                    <img src="resources/test.jpg" style="max-height: 200px;">
+                    <img src="resources/test-1.png" class="imagelayer" >
+                    <img src="resources/test-2.png" class="imagelayer" >
+                    <figcaption>Das ist ein Test.</figcaption>
+                </figure>
+                <figure class="imagebox">
+                <img src="resources/erythrozyt-groesse.jpg" style="max-height: 200px;">
+                <figcaption>Das ist ein Test.</figcaption>
+                </figure>
+                <figure class="imagebox">
+                    <img src="resources/erythrozyt-groesse.jpg" style="max-height: 200px;">
+                </figure>
+                <div class="box box-red">
+                    <span class="box-title">Definition</span>
+                    <p>Das ist eine Definition.</p>
+                </div>
+                <div class="box box-blue">
+                    <span class="box-title">Merke!</span>
+                    <p>Das ist eine Definition.</p>
+                </div>
+                <div class="box box-green">
+                    <span class="box-title">Merke!</span>
+                    <p>Das ist eine Definition.</p>
+                </div>
+                <div class="box box-purple">
+                    <span class="box-title">Merke!</span>
+                    <p>Das ist eine Definition.</p>
+                </div>
+            </section>
+            <section id="abstract">
+                <h1>Abstract</h1>
+                <p>Das Blut ist ein <i>flüssiges Gewebe</i>, das alle Oragne des Körpers miteinander verbindet. Es transportiert u.a. Sauerstoff, Nährstoffe und Abfallprodukte und ist in Form der Leukozyten (weiße Blutkörperchen) ein wesentlicher Bestandteil des Immunsystems.</p>
+                <p>Es besteht grob aus:
+                    <ul>
+                        <li>dem flüssigen Blutplasma,</li>
+                        <li>den roten Blutkörperchen (Erythrozyten),</li>
+                        <li>den weißen Blutkörperchen (Leukozyten),</li>
+                        <li>und den Blutplättchen (Thrombozyten).</li>
+                    </ul>
+                </p>
+                <p class="info">Die Blutmenge eines Menschens beträgt in etwa 8 % des Körpergewichtes. Ein 70 kg schwerer Mensch hat ~ 5,6 l Blut. </p>
+            </section>
+            <section id="aufgaben-1">
+                <h1>Aufgaben des Blutes</h1>
+                <p>Das Blut nimmt u.a. folgende Funktionen wahr:</p>
+                <p>
+                <img src="resources/delivery-truck.png" class="simg vcenter"><b class="vcenter">    Transportfunktion:</b><br>
+                Die Hauptaufgabe des Blutes ist der Transport verschiedener Substanzen. So werden u.a. <b>Gase</b> wie Sauerstoff (O<sub>2</sub>) und Kohlenstoffdioxid (CO<sub>2</sub>) durch das Blut zwischen Lunge und den Zellen im ganzen Körper hin- und hertransportiert.
+                Aber auch <b>aus aufgenommener Nahrung resorbierte Stoffe</b> werden durch das Blut in die Organe gebracht und <b>Stoffwechselendprodukte</b> werden zur Ausscheidung zu Leber, Niere und Lunge gebracht.
+                Auch <b>Hormone</b> werden durch das Blut im Körper verteilt und helfen so bei der Koordinierung der Organe untereinander.
+                </p>
+                <p>
+                    <img src="resources/bleeding.png" class="simg vcenter"><b class="vcenter">      Hämostase (Blutgerinnung):</b><br>
+                    Durch den Prozess der Hämostase kann nach Verletzungen von Blutgefäßen die Blutung gestillt werden. So wird ein übermäßiger Austritt von Blut verhindert und die Voraussetzung für die weitere Wundheilung geschaffen.
+                </p>
+                <p>
+                    <img src="resources/defence.png" class="simg vcenter"><b class="vcenter">       Immunabwehr:</b><br>
+                    Das Blut ist in Form der Leukozyten Teil des Immunsystems und wehrt zusammen mit den lymphatischen Organen potenziell schädliche Moleküle und Zellen ab.
+                </p>
+
+            </section>
+            <section id="zusammensetzung" class="level-limited" data-level="2">
+                <section id="zusammensetzung-intro">
+                    <h1>Zusammensetzung des Blutes</h1>
+                    <p>Das Blut besteht aus dem <b>flüssigen Blutplasma</b> und den <b>zellulären Bestandteilen</b> (Erythrozyten, Leukozyten, Thrombozyten).</p>
+                    <figure>
+                        <img src="resources/blut-zusammensetzung.png" class="hcenter w100">
+                    </figure>
+                    <p>Zentrifugiert man Blut, das mit Gerinnungshemmern versetzt wurde, separieren sich die verschiedenen Bestandteile des Blutes. Bei einem gesunden Menschen macht das flüssige Blutplasma etwa 55 % aus und die Erythrozyten etwa 45 %. Zwischen Blutplasma und Erythrozyten bildet sich die Buffy Coat, bestehend aus den Leuko- und Thrombozyten.</p>
+                    <div class="info">
+                        <p>Als <b>Hämatokrit</b> bezeichnet man den <b>prozentualen Anteil der Blutzellen am Gesamtvolumen</b> des Blutes. Je höher der Hämatokrit-Wert ist, desto mehr Blutzellen und desto weniger flüssiges Blutplasma befinden sich in der Probe.</p>
+                        <p><b>Normwerte</b><br>
+                        Männer: 42 - 50 %<br>
+                        Frauen: 37 - 45 %<br>
+                        </p>
+                        <p><b>Bedeutung hoher Hämatokrit-Wert</b><br>
+                            Ein erhöhter Hämatokrit-Wert kann auf eine Exsikkose (starker Flüssigkeitsmangel) hinweisen, selten liegt auch eine krankheitsbedingte (Polycythaemia vera) abnorme Vermehrung der Erythrozyten vor. Das Risiko für Thrombosen und Embolien wird durch das zähflüssigere Blut erhöht.
+                        </p>
+                        <p><b>Bedeutung niedriger Hämatokrit-Wert</b><br>
+                            Ein akut erniedrigter Hämatokrit-Wert tritt z. B. nach dem Ersatz von Blut durch Vollektrolytlösungen ein. (Der Blutvolumenverlust ist akut gefährlicher als der Verlust von Blutzellen.)
+                        </p>
+                    </div>
+                </section>
+                <section id="zusammensetzung-zellulaere-bestandteile">
+                    <h2>Zelluläre Bestandteile</h2>
+                    <span>
+                        <img src="resources/blutzellen.jpg" class="hcenter w100">
+                        <figcaption style="text-align: center;">Von links nach rechts: Erythrozyt, Thrombozyt, Leukozyt (eingefärbte Rasterelektronenmikroskopaufnahme)</figcaption>
+                    </span>
+                </section>
+                <section id="zusammensetzung-erythrozyten" class="level-limited" data-level="3">
+                    <h3>Erythrozyten</h3>
+                    <p>Die Erythrozyten (rote Blutkörperchen) sind kernlose und scheibenförmige Zellen. Ihre Aufgabe ist der Transport von Sauerstoff (O<sub>2</sub>) in die Zellen im gesamten Körper und der Abtransport von Kohlenstoffdioxid (CO<sub>2</sub>) in die Lunge.
+                    Durch ihre Form erleichtern sie – durch die Verkürzung der Diffusionsstrecke – die Sauerstoffaufnahme und -abgabe, zudem lassen sie sich einfach verformen und können so auch kleinste Kappilare durchqueren.
+                    </p>
+                    <h4>Größe und Anzahl</h4>
+                    <img src="resources/erythrozyt-groesse.jpg" class="hcenter w100">
+                    <p>Erythrozyten haben einen Durchmesser von etwa 7,5 μm mit einer Dicke von 1-2 μm. Zum Vergleich: Ein Kopfhaar ist etwa 50 μm dick.</p>
+                    <p>Pro μl Blut sollte ein Mensch 4 bis 6 Millionen Erythrozyten besitzen, die Anzahl ist u.a. vom Sauerstoffbedarf des Körpers und dem Sauerstoffangebot der Lunge abhängig.</p>
+                    <h4>Aufbau</h4>
+                    <p>Der Hauptbestandteil der Erythrozyten ist das eisenhaltige <b>Hämoglobin</b>, das den Erythrozyten und so dem gesamten Blut die typische rote Farbe gibt. An die Eisenatome im Hämoglobin bindet sich Sauerstoff und wird so durch den Körper transportiert.</p>
+                    <h4>Bildung & Abbau</h4>
+                    <p>Erythrozyten werden im <b>roten Knochenmark</b> aus Stammzellen gebildet und gereift. Während der Reifung verlieren sie Zellkern und Zellorganellen und werden anschließend in das Blut ausgeschwämmt. Es werden etwa 160 Millionen Erythrozyten pro Minute neu gebildet.</p>
+                    <p>Sie Leben für etwa 120 Tage und werden dann v.a. in Milz und Leber abgebaut. Hierbei wird Eisen frei, dass dann erneut für den Bau von Hämoglobin genutzt werden kann.</p>
+                </section>
+            </section>
+            <section id="wiederholungsfragen">
+                <section id="wiederholungsfragen-intro">
+                    <h1>Wiederholungsfragen</h1>
+                    <p>Auf den folgenden Seiten findest du einige Wiederholungsfragen. Bei Bedarf kannst du über den Link "Nochmal nachlesen?" noch einmal zur entsprechenden Erklärung zurückspringen. Viel Spaß!</p>
+                </section>
+                <section id="wiederholungsfragen-1">
+                    <div class="quiz-reveal">
+                        <p class="quiz-question">Welche vier Hauptbestandteile hat das Blut?</p>
+                        <button type="button" class="quiz-reveal-btn">Aufdecken</button>
+                        <div class="quiz-answer">
+                            <hr>
+                            <p>Die vier Hauptbestandteile sind:
+                                <ul>
+                                    <li>das flüssige Blutplasma,</li>
+                                    <li>die roten Blutkörperchen (Erythrozyten),</li>
+                                    <li>die weißen Blutkörperchen (Leukozyten),</li>
+                                    <li>und die Blutplättchen (Thrombozyten)</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <a href="#/zusammensetzung-intro" class="quiz-look-up">Nochmal nachlesen?</a>
+                    </div>
+                </section>
+                <section id="wiederholungsfragen-2">
+                    <div class="quiz-reveal">
+                        <p class="quiz-question">Nenne drei Aufgaben des Blutes!</p>
+                        <button type="button" class="quiz-reveal-btn">Aufdecken</button>
+                        <div class="quiz-answer">
+                            <hr>
+                            <p>Das Blut nimmt unter anderem folgende Funktionen wahr:
+                            <ul>
+                                <li>Transport (u.a. von Gasen und mit der Nahrung aufgenommenen Stoffen)</li>
+                                <li>Hämostase (Blutgerinnung)</li>
+                                <li>Immunabwehr</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <a href="#/aufgaben-1" class="quiz-look-up">Nochmal nachlesen?</a>
+                    </div>
+                </section>
+                <section id="wiederholungsfragen-3">
+                    <div class="quiz-cloze">
+                        <p class="quiz-question">Als <span class="cloze">Hämatokrit</span> bezeichnet man den prozentualen Anteil der Blutzellen am Gesamtvolumen des Blutes.</p>
+                        <button type="button" class="quiz-reveal-btn">Aufdecken</button>
+                        <a href="#/zusammensetzung-intro" class="quiz-look-up">Nochmal nachlesen?</a>
+                    </div>
+                </section>
+                <section id="wiederholungsfragen-4">
+                    <div class="quiz-cloze">
+                        <p class="quiz-question">Je höher der Hämatokrit-Wert ist, desto <span class="cloze">mehr</span> Blutzellen und desto <span class="cloze">weniger</span> flüssiges Blutplasma befinden sich in der Probe.</p>
+                        <button type="button" class="quiz-reveal-btn">Aufdecken</button>
+                        <a href="#/zusammensetzung-intro" class="quiz-look-up">Nochmal nachlesen?</a>
+                    </div>
+                </section>
+                <section id="wiederholungsfragen-5">
+                    <div class="quiz-single-choice">
+                        <p class="quiz-question">Wo werden die Erythrozyten gebildet?</p>
+                        <div class="quiz-answers">
+                                <div>
+                                    <input type="radio" id="q5-1" name="q5" data-correct="true">
+                                    <label for="q5-1">Huey</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q5-2" name="q5" data-correct="false">
+                                    <label for="q5-2">Dewey</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q5-3" name="q5" data-correct="false">
+                                    <label for="q5-3">Louie</label>
+                                </div>
+                        </div>
+                        <button type="button" class="quiz-reveal-btn">Lösen</button>
+                    </div>
+                </section>
+                <section id="wiederholungsfragen-6">
+                    <div class="quiz-multiple-choice">
+                        <p class="quiz-question">Wo werden die Erythrozyten abgebaut?</p>
+                        <div class="quiz-answers">
+                            <div>
+                                <input type="checkbox" id="q6-1" data-correct="true">
+                                <label for="q6-1">Huey</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="q6-2" data-correct="false">
+                                <label for="q6-2">Dewey</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="q6-3" data-correct="true">
+                                <label for="q6-3">Louie</label>
+                            </div>
+                        </div>
+                        <button type="button" class="quiz-reveal-btn">Lösen</button>
+                    </div>
+                </section>
+                <section id="wiederholungsfragen-7">
+                    <div class="quiz-keyboard">
+                        <p class="quiz-question">Wie lautet der Fachbegriff für die roten Blutkörperchen?</p>
+                        <input type="text" class="quiz-keyboard-input" data-answer="Erythrozyten">
+                        <button type="button" class="quiz-reveal-btn">Überprüfen</button>
+                    </div>
+                </section>
+            </section>
+            <section id="summary">
+                <h1>Key Takeaways</h1>
+                <p>Hier wäre jetzt eine tolle Zusammenfassung.</p>
+            </section>
+            <section id="credits">
+                <h1>Abbildungsquellen</h1>
+                <h2>Bilder:</h2>
+                <ul>
+                    <li>Illustration Blutbestandteile: <a href="https://commons.wikimedia.org/w/index.php?curid=30148163">OpenStax College - Anatomy &amp; Physiology, Connexions Web site. http://cnx.org/content/col11496/1.6/, Jun 19, 2013., CC BY 3.0</a></li>
+                    <li>Rasterelektronenmikroskopaufnahme Blutzellen: <a href="https://commons.wikimedia.org/w/index.php?curid=407197">Electron Microscopy Facility at The National Cancer Institute at Frederick (NCI-Frederick), Gemeinfrei</a></li>
+                </ul>
+                <h2>Icons:</h2>
+                <ul>
+                    <li>Transporter-Icon: <a href="https://www.flaticon.com/free-icons/delivery" title="delivery icons">Delivery icons created by Vectors Market - Flaticon</a></li>
+                    <li>Blutende Hand Icon: <a href="https://www.flaticon.com/free-icons/wound" title="wound icons">Wound icons created by smashingstocks - Flaticon</a></li>
+                    <li>Shield Icon: <a href="https://www.flaticon.com/free-icons/shield" title="shield icons">Shield icons created by Hilmy Abiyyu A. - Flaticon</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="extra">
+            <section id="extra1">
+                <h1>Exkurs: Beispiel1</h1>
+            </section>
+        </div>
+    </div>
+    <div class="sizer">
+        <input type="range" min="30" max="95" value="35" class="slider" id="marginslider">
+    </div>
+</body>
+<script type="module">
+    import WebLearn from "./js/studyswipe.js";
+    console.log(WebLearn);
+    WebLearn.init();
+    WebLearn.init_sizer();
+</script>
+</html>
