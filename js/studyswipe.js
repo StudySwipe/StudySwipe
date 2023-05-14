@@ -19,6 +19,8 @@ export default {
                 let selected_level = parseInt(document.querySelector('input[name="level"]:checked').getAttribute("data-level"));
 
                 console.log("Selected level is: " + selected_level);
+                update_hash({level: selected_level});
+
                 for(let element of document.getElementsByClassName("level-limited")){
                     console.log(parseInt(element.getAttribute("data-level"))+" <= "+parseInt(selected_level)+"?");
                     if(parseInt(element.getAttribute("data-level"))<=parseInt(selected_level)){
